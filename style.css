@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(218, 23%, 16%);
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50rem;
+  height: 35rem;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 6rem 4rem;
+  position: relative;
+  align-items: center;
+}
+
+.card__dice {
+  position: absolute;
+  bottom: -3rem;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 5;
+  padding: 3rem;
+  background-color: hsl(150, 100%, 66%);
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__dice--svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.card__dice--svg.animate {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.head__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.8rem;
+}
+
+.card__head,
+.card__number {
+  font-size: 1.5rem;
+  color: hsl(150, 100%, 66%);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.card__para {
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.card__dice:hover {
+  /* filter: brightness(115%) */
+  box-shadow: 0 0 3.5rem hsl(150, 100%, 66%);
+}
+
+footer {
+  position: absolute;
+  color: white;
+  font-size: 1.6rem;
+  bottom: 0;
+  left: 0;
+}
+
+footer a {
+  color: bisque;
+}
+
+@media only screen and (max-width: 524px) {
+  .card {
+    width: 33rem;
+  }
+  .card__img {
+    content: url("images/pattern-divider-mobile.svg");
+  }
+  .card__para {
+    font-size: 2.2rem;
+  }
+}
