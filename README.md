@@ -1,10 +1,13 @@
 # Proyecto Tolerancia a Fallas
 
 Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/arquitectura.png)
+
 
 # Autores 👥💬
 
 🔸🔹     Campos Serna Hector      🔹🔸 
+
 🔹🔸  Medina Bolaños Danna Paola  🔸🔹 
 
 
@@ -12,8 +15,12 @@ Aplicación web que utiliza una API la cual genera consejos/frases de manera ale
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en un contenedor de docker, con la cual podras realizar peticiones a una API externa y esta te retornara frases o consejos._
 
-🔹Pre-requisitos🖇️
-Docker Desktop
+### 🔹Pre-requisitos🖇️
+
+Visual Studio Code
+Docker Desktop - Comandos
+Web Developer
+Conocimiento de API's
 
 
 ## Despliegue 📦
