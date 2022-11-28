@@ -18,8 +18,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ## Despliegue 📦
 
 ## Construido con 🛠️
-HTML5
-CSS3
-JavaScript
+* HTML5
+* CSS3
+* JavaScript
 
 ## Arquitectura 🧭
