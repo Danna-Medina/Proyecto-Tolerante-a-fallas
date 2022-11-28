@@ -1,6 +1,6 @@
 # Proyecto Tolerancia a Fallas
 
-Aplicación web con arquitectura de microservicios en la que se realiza una encuesta y una vez realizado el voto dependiendo de la versión en la que se haya votado se tendrá la opción de poder jugar un minijuego (versión 2). Además de obtener los resultados de la encuesta.
+Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
 
 ## Autores 🧸
 
@@ -18,6 +18,8 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ## Despliegue 📦
 
 ## Construido con 🛠️
-
+* HTML5
+* CSS3
+* JavaScript
 
 ## Arquitectura 🧭
