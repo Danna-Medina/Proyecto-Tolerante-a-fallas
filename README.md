@@ -17,10 +17,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### 🔹Pre-requisitos🖇️
 
-Visual Studio Code
-Docker Desktop - Comandos
-Web Developer
-Conocimiento de API's
+* Visual Studio Code
+* Docker Desktop - Comandos
+* Web Developer
+* Conocimiento de API's
 
 
 ## Despliegue 📦
