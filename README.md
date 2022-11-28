@@ -35,4 +35,4 @@ docker run -d -p 80:80 html-server:v1
 * API
 
 ## Arquitectura 🧭
-![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/images/arquitectura.png)
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/blob/master/images/arquitectura.png)
