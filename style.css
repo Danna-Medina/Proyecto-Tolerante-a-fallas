@@ -75,8 +75,7 @@ body {
   font-size: 1.8rem;
 }
 
-.card__head,
-.card__number {
+.card__head, .card__number {
   font-size: 1.5rem;
   color: hsl(150, 100%, 66%);
   font-weight: 400;
@@ -91,7 +90,6 @@ body {
 }
 
 .card__dice:hover {
-  /* filter: brightness(115%) */
   box-shadow: 0 0 3.5rem hsl(150, 100%, 66%);
 }
 
