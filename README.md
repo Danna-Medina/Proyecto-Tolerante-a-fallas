@@ -21,5 +21,6 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 * HTML5
 * CSS3
 * JavaScript
+* API
 
 ## Arquitectura 🧭
