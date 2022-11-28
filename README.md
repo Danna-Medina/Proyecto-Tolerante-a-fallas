@@ -23,8 +23,9 @@ Clonamos el repositorio mediente el siguiente comando:
 * Docker <br>
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
 ```
-docker build -t html-server-image:v1 .
-docker ejecutar -d -p 80:80 html-server-image:v1
+docker build -t html-server:v1 .
+docker images
+docker run -d -p 80:80 html-server:v1
 ```
 
 ## Construido con 🛠️
