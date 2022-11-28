@@ -2,21 +2,26 @@
 
 Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
 
-## Autores 👥💬
+# Autores 👥💬
 
 🔸🔹     Campos Serna Hector      🔹🔸 
-
 🔹🔸  Medina Bolaños Danna Paola  🔸🔹 
 
 
-## 🔸Comenzando 🎟️🎫
+# 🔸Comenzando 🎟️🎫
 
 _Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en un entorno Sandbox de Red Hat Openshift para propósitos de desarrollo y pruebas._
 
-## 🔹Pre-requisitos🖇️
+🔹Pre-requisitos🖇️
+Docker Desktop
 
 
 ## Despliegue 📦
+* Github
+Clonamos el repositorio mediente el siguiente comando: 
+```gh repo clone Danna-Medina/ProyectoTolerante ``` o podemos descargamos el archivo zip del proyecto.
+* Docker
+
 
 ## Construido con 🛠️
 * HTML5
