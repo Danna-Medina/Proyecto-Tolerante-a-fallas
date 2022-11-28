@@ -30,6 +30,9 @@ Clonamos el repositorio mediente el siguiente comando:
 ```gh repo clone Danna-Medina/ProyectoTolerante ```  o podemos descargar el archivo zip del proyecto.
 * Docker <br>
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
+
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
+
 ```
 docker build -t html-server:v1 .
 docker images
