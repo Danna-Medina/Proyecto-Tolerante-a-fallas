@@ -17,10 +17,10 @@ Docker Desktop
 
 
 ## Despliegue 📦
-* Github
+* Github <br>
 Clonamos el repositorio mediente el siguiente comando: 
 ```gh repo clone Danna-Medina/ProyectoTolerante ```  o podemos descargamos el archivo zip del proyecto.
-* Docker
+* Docker <br>
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
 ```
 docker build -t html-server-image:v1 .
