@@ -5,6 +5,7 @@ Aplicación web que utiliza una API la cual genera consejos/frases de manera ale
 ## Autores 👥💬
 
 🔸🔹     Campos Serna Hector      🔹🔸 
+
 🔹🔸  Medina Bolaños Danna Paola  🔸🔹 
 
 
