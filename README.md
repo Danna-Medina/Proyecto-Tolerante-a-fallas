@@ -1,7 +1,8 @@
 # Proyecto Tolerancia a Fallas
 
 Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
-![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/arquitectura.png)
+
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.jpg)
 
 
 # Autores 👥💬
