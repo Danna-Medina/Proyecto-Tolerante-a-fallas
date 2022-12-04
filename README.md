@@ -45,7 +45,12 @@ Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo d
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
 ```
-
+#### Kubernetes
+Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Kubernetes con lo cual agruparemos el contenedor que a su ves contine los servicios de nuestro proyecto, para esto ejecutamos los siguientes commandos con los generan nuestro cluster que estara ubicado en el puerto 8080 de manera local.
+```
+ kubectl apply -f k8s/pod.yaml 
+ kubectl apply -f k8s/deployment.yaml
+```
 ## Construido con 🛠️
 * HTML5
 * CSS3
