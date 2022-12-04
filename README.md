@@ -1,7 +1,8 @@
 # Proyecto Tolerancia a Fallas
 
 Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
-![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/arquitectura.png)
+
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.jpg)
 
 
 # Autores 👥💬
@@ -17,10 +18,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 ### 🔹Pre-requisitos🖇️
 
-Visual Studio Code
-Docker Desktop - Comandos
-Web Developer
-Conocimiento de API's
+* Visual Studio Code
+* Docker Desktop - Comandos
+* Web Developer
+* Conocimiento de API's
 
 
 ## Despliegue 📦
@@ -29,10 +30,20 @@ Clonamos el repositorio mediente el siguiente comando:
 ```gh repo clone Danna-Medina/ProyectoTolerante ```  o podemos descargar el archivo zip del proyecto.
 * Docker <br>
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
+
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
+
 ```
-docker build -t html-server:v1 .
+docker build -t proyecto-tolerante:v1 .
 docker images
-docker run -d -p 80:80 html-server:v1
+docker run -d -p 80:80  proyecto-tolerante:v1
+```
+
+#### Docker Hub
+Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
+```
+docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
+docker push dannamedina17/proyecto-tolerante:v1
 ```
 
 ## Construido con 🛠️
