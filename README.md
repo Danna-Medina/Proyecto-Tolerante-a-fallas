@@ -34,9 +34,16 @@ Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
 
 ```
-docker build -t html-server:v1 .
+docker build -t proyecto-tolerante:v1 .
 docker images
-docker run -d -p 80:80 html-server:v1
+docker run -d -p 80:80  proyecto-tolerante:v1
+```
+
+#### Docker Hub
+Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
+```
+docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
+docker push dannamedina17/proyecto-tolerante:v1
 ```
 
 ## Construido con 🛠️
