@@ -51,6 +51,11 @@ Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Ku
  kubectl apply -f k8s/pod.yaml 
  kubectl apply -f k8s/deployment.yaml
 ```
+Podemos verificar los pods que hemos creado y cuales estan corriendo.
+```
+kubectl get pods
+ kubectl apply -f k8s/deployment.yaml
+```
 Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carcga en nuestros servicios.
 ```
 minikube start
