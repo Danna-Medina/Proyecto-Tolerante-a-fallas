@@ -34,7 +34,7 @@ Clonamos el repositorio mediente el siguiente comando:
 ### Docker 🐳 <br>
 
 Creamos un archivo el cual nombraremos "dockerfile" el cual contine la imagen de nuestro contendor a crear.
-![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker.png)
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker1.png)
 
 
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
