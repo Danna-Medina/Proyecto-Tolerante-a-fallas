@@ -19,8 +19,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### 🔹Pre-requisitos🖇️
 
 * Visual Studio Code
-* Docker Desktop - Comandos
+* Docker Desktop 
 * Web Developer
+* Minikube
+* Istio
 * Conocimiento de API's
 
 
@@ -68,6 +70,15 @@ minikube dashboard
 ```
 #### Istio
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
+Instalacion de Istio
+```
+isiotctl install
+```
+Podemos verificar su instalacion con 
+```
+isiotctl version
+isiotctl x precheck
+```
 Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System
 ```
 kubectl get pod -n istio-system
