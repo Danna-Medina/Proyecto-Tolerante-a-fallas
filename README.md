@@ -95,7 +95,8 @@ Con el siguiente comando podemos ver cuales pods estan disponibles en Istio Syst
 ```
 kubectl get pod -n istio-system
 ```
-Despues instalmos Kailia para istio
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod.png)
+Despues instalmos Kaili para istio
 ```
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
 ```
