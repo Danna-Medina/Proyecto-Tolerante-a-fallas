@@ -45,7 +45,27 @@ Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo d
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
 ```
-
+#### Kubernetes
+Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Kubernetes con lo cual agruparemos el contenedor que a su ves contine los servicios de nuestro proyecto, para esto ejecutamos los siguientes commandos con los generan nuestro cluster que estara ubicado en el puerto 8080.
+```
+ kubectl apply -f k8s/pod.yaml 
+ kubectl apply -f k8s/deployment.yaml
+```
+Podemos verificar los pods que hemos creado y cuales estan corriendo.
+```
+kubectl get pods
+```
+Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carcga en nuestros servicios.
+```
+minikube start
+kubectl create deployment balanced --image=grc.io/k8s-minikube/storage-proyect
+kubectl expose deployment balanced --type=LoadBalancer --port=8080
+minikube tunnel
+```
+Con el siguiente comando podemos ver graficamente los servicio y pods asi como informacion adicional del host.
+```
+minikube dashboard
+```
 ## Construido con 🛠️
 * HTML5
 * CSS3
