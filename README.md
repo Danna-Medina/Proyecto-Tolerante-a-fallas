@@ -4,6 +4,9 @@ Aplicación web que utiliza una API la cual genera consejos/frases de manera ale
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.jpg)
 
+El tiempo de respuesta es de dos segundos para generar una respuesta aleatoria que regresa un objeto json.
+
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/api.png)
 
 # Autores 👥💬
 
