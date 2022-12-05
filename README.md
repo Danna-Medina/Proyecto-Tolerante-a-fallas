@@ -97,9 +97,9 @@ Con el siguiente comanodo podemos ver el estado actual de nuestros servicios en 
 ```
 kubectl get svc -n istio-system
 ```
-Por ultimo redirigimos el trafico a la consola grafica (Kailia) para obtner mas detalles de la malla de servicios.
+Por ultimo redirigimos el trafico a la consola grafica (Kiali) para obtner mas detalles de la malla de servicios.
 ```
-kubectl port-forward scv/kaili -n isitio-system 20001
+kubectl port-forward scv/kiali -n isitio-system 20001
 ```
 
 ## Construido con 🛠️
