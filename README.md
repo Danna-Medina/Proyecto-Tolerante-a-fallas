@@ -2,7 +2,7 @@
 
 Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
 
-![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.jpg)
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.png)
 
 El tiempo de respuesta es de dos segundos para generar una respuesta aleatoria que regresa un objeto json.
 
