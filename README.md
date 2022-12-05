@@ -34,7 +34,7 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 
 
 ## Despliegue 📦
-### Github <br>
+### Github 💾<br>
 Clonamos el repositorio mediente el siguiente comando: 
 ```gh repo clone Danna-Medina/ProyectoTolerante ```  o podemos descargar el archivo zip del proyecto.
 
