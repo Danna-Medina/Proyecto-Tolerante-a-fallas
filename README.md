@@ -64,10 +64,11 @@ kubectl create deployment balanced --image=grc.io/k8s-minikube/storage-proyect
 kubectl expose deployment balanced --type=LoadBalancer --port=8080
 minikube tunnel
 ```
-Con el siguiente comando podemos ver graficamente los servicio y pods asi como informacion adicional del host.
+Con el siguiente comando podemos ver graficamente los servicios y pods asi como informacion adicional del host.
 ```
 minikube dashboard
 ```
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube.jpeg)
 ### Istio
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
 Instalacion de Istio
