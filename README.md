@@ -151,7 +151,7 @@ kubectl label namespace proyecto-tolerante istio-injection=enabled
 ```
 
 
-Con el siguiente comanodo podemos ver el estado actual de nuestros servicios en istio system
+Con el siguiente comando podemos ver el estado actual de nuestros servicios en istio system
 ```
 kubectl get svc -n istio-system
 ```
