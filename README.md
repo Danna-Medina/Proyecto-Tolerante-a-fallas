@@ -71,6 +71,8 @@ Con el siguiente comando podemos ver graficamente los servicios y pods asi como 
 minikube dashboard
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube.jpeg)
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube2.jpeg)
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube3.jpeg)
 
 
 ### Istio
