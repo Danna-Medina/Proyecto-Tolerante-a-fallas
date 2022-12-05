@@ -49,14 +49,14 @@ docker run -d -p 80:80  proyecto-tolerante:v1
 
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/local.png)
 
-### Docker Hub
+### Docker Hub 🐳📦
 Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
 ```
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
 ```
 
-### Kubernetes
+### Kubernetes ☸
 Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Kubernetes con lo cual agruparemos el contenedor que a su ves contiene los servicios de nuestro proyecto, para esto ejecutamos los siguientes commandos con los generan nuestro cluster que estara ubicado en el puerto 8080.
 ```
  kubectl apply -f k8s/pod.yaml 
@@ -66,6 +66,7 @@ Podemos verificar los pods que hemos creado y cuales estan corriendo.
 ```
 kubectl get pods
 ```
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod01.jpg)
 Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carga en nuestros servicios.
 ```
 minikube start
@@ -103,12 +104,13 @@ Con el siguiente comando podemos ver cuales pods estan disponibles en Istio Syst
 kubectl get pod -n istio-system
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod.jpeg)
-Despues instalmos Kaili para istio
+
+Despues instalamos Kaili para istio
 ```
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
 ```
 Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra aplicacion.
-Despues instalmos Kailia para istio
+Despues instalamos Kaili para istio
 ```
 kubectl create ns proyecto-tolerante
 kubectl label namespace proyecto-tolerante istio-injection=enabled
