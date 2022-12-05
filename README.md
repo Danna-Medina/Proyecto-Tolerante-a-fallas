@@ -110,17 +110,19 @@ minikube dashboard
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube4.jpeg)
 
 
-### Istio
+### Istio 💻
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
 Instalacion de Istio
 ```
 istioctl install
 ```
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/istio.png)
 Podemos verificar su instalacion con 
 ```
 istioctl version
 istioctl x precheck
 ```
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ver.png)
 Configuramos el nombre del perfil que sera instalado en el cluster
 ```
 istioctl install --set profile=demo -y
