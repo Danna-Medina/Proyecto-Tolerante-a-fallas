@@ -49,7 +49,7 @@ Corremos nuestro contenedor
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
-* Contenedor ✔️
+* Contenedor ✔️ <br>
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/image.png)
 
 * Imagen ✔️
