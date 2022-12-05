@@ -49,8 +49,11 @@ Corremos nuestro contenedor
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
-*Contenedor 
+* Contenedor ✔️
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
+
+* Imagen ✔️
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/image.png)
 
 Verificamos las imagenes que se han creado
 ```
@@ -59,7 +62,7 @@ docker images
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/dock.png)
 
 
-Ahora podemos ver nuestra apliacacion en el puerto 80
+Ahora podemos ver nuestra aplicacion en el puerto 80
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/local.png)
 
 ### Docker Hub 🐳📦
