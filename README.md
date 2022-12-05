@@ -8,7 +8,7 @@ El tiempo de respuesta es de dos segundos para generar una frase aleatoria que r
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/api.png)
 
-Si falla la transaccion, nos retornara un mensaje con el tipo y detalles del error, de esta manera podemos redirijir al usuario a otro servicio.
+Si falla la transaccion, nos retornara un mensaje con el tipo y detalles del error, de esta manera podemos redirijir al usuario.
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/error.png)
 
@@ -46,12 +46,12 @@ Creamos un archivo el cual nombraremos "dockerfile" el cual contine la imagen de
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker1.png)
 
 
-Creamos el contenedor con la imagen que definimos en nuestro archivo dockerfile
+Creamos el contenedor con la imagen que definimos en nuestro archivo dockerfile.
 ```
 docker build -t proyecto-tolerante:v1 .
 ```
 
-Corremos nuestro contenedor
+Corremos nuestro contenedor en docker.
 ```
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
@@ -69,11 +69,11 @@ docker images
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/dock.png)
 
 
-Ahora podemos ver nuestra aplicacion en el puerto 80
+Ahora podemos ver nuestra aplicacion en el puerto localhost:80.
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/local.png)
 
 ### Docker Hub 🐳📦
-Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
+Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera.
 ```
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
@@ -116,42 +116,42 @@ minikube dashboard
 
 ### Istio 💻
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
-Instalacion de Istio
+Instalacion de Istio.
 ```
 istioctl install
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/istio.png)
-Podemos verificar su instalacion con 
+Podemos verificar su instalacion con los siguieentes comandos.
 ```
 istioctl version
 istioctl x precheck
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ver.png)
-Configuramos el nombre del perfil que sera instalado en el cluster
+Configuramos el nombre del perfil que sera instalado en el cluster.
 ```
 istioctl install --set profile=demo -y
 ```
-Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System
+Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System.
 ```
 kubectl get pod -n istio-system
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod.jpeg)
 
-Despues instalamos Kaili para istio
+Despues instalamos Kaili para Istio.
 ```
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/down.png)
 
 Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra aplicacion.
-Despues instalamos Kaili para istio
+Despues instalamos Kaili para Istio.
 ```
 kubectl create ns proyecto-tolerante
 kubectl label namespace proyecto-tolerante istio-injection=enabled
 ```
 
 
-Con el siguiente comando podemos ver el estado actual de nuestros servicios en istio system
+Con el siguiente comando podemos ver el estado actual de nuestros servicios en Istio system.
 ```
 kubectl get svc -n istio-system
 ```
