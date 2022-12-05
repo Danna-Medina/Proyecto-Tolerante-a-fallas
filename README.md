@@ -66,7 +66,7 @@ Podemos verificar los pods que hemos creado y cuales estan corriendo.
 ```
 kubectl get pods
 ```
-![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod01.jpg)
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod01.png)
 Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carga en nuestros servicios.
 ```
 minikube start
