@@ -72,12 +72,12 @@ minikube dashboard
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
 Instalacion de Istio
 ```
-isiotctl install
+istioctl install
 ```
 Podemos verificar su instalacion con 
 ```
-isiotctl version
-isiotctl x precheck
+istioctl version
+istioctl x precheck
 ```
 Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System
 ```
