@@ -1,12 +1,16 @@
-# Proyecto Tolerancia a Fallas
+ Proyecto Tolerancia a Fallas
 
-Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton. Asi mismo contiene metodos que en caso de una falla nos permite identificar la causa del error y manejar el problema.
+Aplicación web que utiliza una API la cual genera consejos/frases de manera aleatoria al presionar un boton.
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/interfaz.png)
 
 El tiempo de respuesta es de dos segundos para generar una frase aleatoria que regresa dentro de un objeto json.
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/api.png)
+
+Si falla la transaccion, nos retornara un mensaje con el tipo y detalles del error, de esta manera podemos redirijir al usuario a otro servicio.
+
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/error.png)
 
 # Autores 👥💬
 
@@ -147,7 +151,7 @@ kubectl label namespace proyecto-tolerante istio-injection=enabled
 ```
 
 
-Con el siguiente comanodo podemos ver el estado actual de nuestros servicios en istio system
+Con el siguiente comando podemos ver el estado actual de nuestros servicios en istio system
 ```
 kubectl get svc -n istio-system
 ```
@@ -160,7 +164,7 @@ kubectl port-forward scv/kiali -n isitio-system 20001
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/isitio1.jpeg)
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/isitio2.jpeg)
 
-Podemos verificar que nuestra aplicacion sigue funcionado correctamente y todos los servicios se han integrado eficientemente.
+Podemos verificar que nuestra aplicacion sigue funcionado correctamente.
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ad.png)
 
 ## Construido con 🛠️
