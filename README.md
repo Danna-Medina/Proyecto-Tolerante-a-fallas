@@ -102,6 +102,8 @@ Por ultimo redirigimos el trafico a la consola grafica (Kiali) para obtner mas d
 ```
 kubectl port-forward scv/kiali -n isitio-system 20001
 ```
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/istio1.jpeg)
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/istio2jpeg)
 
 ## Construido con 🛠️
 * HTML5
