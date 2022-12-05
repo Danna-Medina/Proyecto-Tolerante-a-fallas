@@ -143,10 +143,14 @@ Despues instalamos Kaili para istio
 kubectl create ns proyecto-tolerante
 kubectl label namespace proyecto-tolerante istio-injection=enabled
 ```
+
+
 Con el siguiente comanodo podemos ver el estado actual de nuestros servicios en istio system
 ```
 kubectl get svc -n istio-system
 ```
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/sv.png)
+
 Por ultimo redirigimos el trafico a la consola grafica (Kiali) para obtner mas detalles de la malla de servicios.
 ```
 kubectl port-forward scv/kiali -n isitio-system 20001
