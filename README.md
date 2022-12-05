@@ -41,6 +41,8 @@ docker images
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/local.png)
+
 ### Docker Hub
 Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
 ```
@@ -57,7 +59,7 @@ Podemos verificar los pods que hemos creado y cuales estan corriendo.
 ```
 kubectl get pods
 ```
-Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica, creara balanza de carga en nuestros servicios.
+Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carcga en nuestros servicios.
 ```
 minikube start
 kubectl create deployment balanced --image=grc.io/k8s-minikube/storage-proyect
@@ -69,6 +71,8 @@ Con el siguiente comando podemos ver graficamente los servicios y pods asi como 
 minikube dashboard
 ```
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube.jpeg)
+
+
 ### Istio
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
 Instalacion de Istio
@@ -80,6 +84,10 @@ Podemos verificar su instalacion con
 istioctl version
 istioctl x precheck
 ```
+A
+```
+istioctl install --set profile=demo -y
+```
 Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System
 ```
 kubectl get pod -n istio-system
@@ -88,8 +96,8 @@ Despues instalmos Kailia para istio
 ```
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
 ```
-Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra aplicacion.
-Despues instalamos Kaili para istio
+Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra apliacion.
+Despues instalmos Kailia para istio
 ```
 kubectl create ns proyecto-tolerante
 kubectl label namespace proyecto-tolerante istio-injection=enabled
