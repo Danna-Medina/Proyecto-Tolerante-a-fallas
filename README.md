@@ -164,7 +164,7 @@ kubectl port-forward scv/kiali -n isitio-system 20001
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/isitio1.jpeg)
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/isitio2.jpeg)
 
-Podemos verificar que nuestra aplicacion sigue funcionado correctamente.
+Podemos verificar que nuestra aplicacion sigue funcionado correctamente y todos sus servicios han sido desplegados eficientemente.
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ad.png)
 
 ## Construido con 🛠️
