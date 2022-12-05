@@ -99,6 +99,7 @@ kubectl create deployment balanced --image=grc.io/k8s-minikube/storage-proyect
 kubectl expose deployment balanced --type=LoadBalancer --port=8080
 minikube tunnel
 ```
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/tunel2.png)
 Con el siguiente comando podemos ver graficamente los servicios y pods asi como informacion adicional del host.
 ```
 minikube dashboard
