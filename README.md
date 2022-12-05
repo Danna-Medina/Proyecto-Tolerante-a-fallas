@@ -8,6 +8,10 @@ El tiempo de respuesta es de dos segundos para generar una frase aleatoria que r
 
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/api.png)
 
+Si falla la transaccion, nos retornara un mensaje con el tipo y detalles del error, de esta manera podemos redirijir al usuario a otro servicio.
+
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/error.png)
+
 # Autores 👥💬
 
 🔸🔹     Campos Serna Hector      🔹🔸 
