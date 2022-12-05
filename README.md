@@ -78,6 +78,9 @@ Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Ku
  kubectl apply -f k8s/pod.yaml 
  kubectl apply -f k8s/deployment.yaml
 ```
+En el archivo pod.yml se define el tipo de archivo, nombre de proyecto y contenedores.
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/pod02.png)
+
 Podemos verificar los pods que hemos creado y cuales estan corriendo.
 ```
 kubectl get pods
