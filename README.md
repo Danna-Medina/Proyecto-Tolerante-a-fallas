@@ -73,6 +73,7 @@ minikube dashboard
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube.jpeg)
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube2.jpeg)
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube3.jpeg)
+![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/kube4.jpeg)
 
 
 ### Istio
