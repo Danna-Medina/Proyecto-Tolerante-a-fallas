@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: proyecto-tolerante-deployment
+  labels:
+    app: proyecto-tolerante
+spec:
+  replicas: 10
+  selector:
+    matchLabels:
+      app: proyecto-tolerante
+  template:
+    metadata:
+      labels:
+        app: proyecto-tolerante
+    spec:
+      containers:
+      - name: proyecto-tolerante
+        image: proyecto-tolerante
+        ports:
+        - containerPort: 8080
