@@ -30,7 +30,13 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 ### Github <br>
 Clonamos el repositorio mediente el siguiente comando: 
 ```gh repo clone Danna-Medina/ProyectoTolerante ```  o podemos descargar el archivo zip del proyecto.
-### Docker <br>
+
+### Docker 🐳 <br>
+
+Creamos un archivo el cual nombraremos "dockerfile" el cual contine la imagen de nuestro contendor a crear.
+![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker.png)
+
+
 Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
 
 ![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
@@ -49,6 +55,7 @@ Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo d
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
 ```
+
 ### Kubernetes
 Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Kubernetes con lo cual agruparemos el contenedor que a su ves contiene los servicios de nuestro proyecto, para esto ejecutamos los siguientes commandos con los generan nuestro cluster que estara ubicado en el puerto 8080.
 ```
@@ -87,7 +94,7 @@ Podemos verificar su instalacion con
 istioctl version
 istioctl x precheck
 ```
-A
+Configuramos el nombre del perfil que sera instalado en el cluster
 ```
 istioctl install --set profile=demo -y
 ```
