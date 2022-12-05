@@ -41,13 +41,13 @@ docker images
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
-#### Docker Hub
+### Docker Hub
 Continuamos subiendo nuestro proyecto a Docker Hub para que podamos utilizarlo de mejor manera
 ```
 docker tag proyecto-tolerante:v1 dannamedina17/proyecto-tolerante:v1
 docker push dannamedina17/proyecto-tolerante:v1
 ```
-#### Kubernetes
+### Kubernetes
 Una vez generado el contedor con la imagen en Docker, crearemos un cluster en Kubernetes con lo cual agruparemos el contenedor que a su ves contine los servicios de nuestro proyecto, para esto ejecutamos los siguientes commandos con los generan nuestro cluster que estara ubicado en el puerto 8080.
 ```
  kubectl apply -f k8s/pod.yaml 
@@ -68,7 +68,7 @@ Con el siguiente comando podemos ver graficamente los servicio y pods asi como i
 ```
 minikube dashboard
 ```
-#### Istio
+### Istio
 Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
 Instalacion de Istio
 ```
