@@ -66,6 +66,31 @@ Con el siguiente comando podemos ver graficamente los servicio y pods asi como i
 ```
 minikube dashboard
 ```
+#### Istio
+Por ultimo desplegaremos nuestra aplicacion en Istio lo cual no permitira automatizar y gestionar nuestros servios.
+Con el siguiente comando podemos ver cuales pods estan disponibles en Istio System
+```
+kubectl get pod -n istio-system
+```
+Despues instalmos Kailia para istio
+```
+kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
+```
+Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra apliacion.
+Despues instalmos Kailia para istio
+```
+kubectl create ns proyecto-tolerante
+kubectl label namespace proyecto-tolerante istio-injection=enabled
+```
+Con el siguiente comanodo podemos ver el estado actual de nuestros servicios en istio system
+```
+kubectl get svc -n istio-system
+```
+Por ultimo redirigimos el trafico a la consola grafica (Kailia) para obtner mas detalles de la malla de servicios.
+```
+kubectl port-forward scv/kaili -n isitio-system 20001
+```
+
 ## Construido con 🛠️
 * HTML5
 * CSS3
