@@ -33,20 +33,33 @@ Clonamos el repositorio mediente el siguiente comando:
 
 ### Docker 🐳 <br>
 
+Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
+
 Creamos un archivo el cual nombraremos "dockerfile" el cual contine la imagen de nuestro contendor a crear.
 ![Interfaz](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker1.png)
 
 
-Para el despliegue de la aplicacion en docker ejecutamos lo siguientes comandos.
-
-![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
-
+Creamos el contenedor con la imagen que definimos en nuestro archivo dockerfile
 ```
 docker build -t proyecto-tolerante:v1 .
-docker images
+```
+
+Corremos nuestro contenedor
+```
 docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
+*Contenedor 
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
+
+Verificamos las imagenes que se han creado
+```
+docker images
+```
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/dock.png)
+
+
+Ahora podemos ver nuestra apliacacion en el puerto 80
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/local.png)
 
 ### Docker Hub 🐳📦
