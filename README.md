@@ -57,7 +57,7 @@ Podemos verificar los pods que hemos creado y cuales estan corriendo.
 ```
 kubectl get pods
 ```
-Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica creara balanza de carcga en nuestros servicios.
+Con el siguiente comando crearemos el "load balancer" basado en algoritmo round robbin como su nombre lo indica, creara balanza de carga en nuestros servicios.
 ```
 minikube start
 kubectl create deployment balanced --image=grc.io/k8s-minikube/storage-proyect
@@ -88,8 +88,8 @@ Despues instalmos Kailia para istio
 ```
 kubectl apply -f https://raw.githubusercontent.com/istio/istio/release-1.16/samples/addons/kiali.yaml
 ```
-Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra apliacion.
-Despues instalmos Kailia para istio
+Despues crearemos un nuevo proyecto con un espacio de trabajo el cual contendra una inyeccion de pods y servicios de nuestra aplicacion.
+Despues instalamos Kaili para istio
 ```
 kubectl create ns proyecto-tolerante
 kubectl label namespace proyecto-tolerante istio-injection=enabled
