@@ -29,8 +29,10 @@ _Estas instrucciones te permitirán obtener una copia del proyecto en funcionami
 * Docker Desktop 
 * Web Developer
 * Minikube
+* Kubernetes
 * Istio
 * Conocimiento de API's
+* LoadBalancer
 
 
 ## Despliegue 📦
