@@ -50,10 +50,10 @@ docker run -d -p 80:80  proyecto-tolerante:v1
 ```
 
 * Contenedor ✔️
-![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/image.png)
 
 * Imagen ✔️
-![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/image.png)
+![Docker](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/docker-image.jpg)
 
 Verificamos las imagenes que se han creado
 ```
