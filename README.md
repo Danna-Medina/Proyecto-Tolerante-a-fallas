@@ -212,11 +212,64 @@ kubectl describe pod <NOMBRE-PODS>
 Podemos verificar que nuestra aplicacion sigue funcionado correctamente y todos sus servicios han sido desplegados eficientemente.
 ![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ad.png)
 
+### Chaos Monkey 🐒🐒
+Primero verificamos el estado actual de nuestros componentes. De primeras podemos ver un comente en “unhealthy” lo cual podia indicar un fallo en nuestra aplicacion.
+
+```
+kubectl componentstatus
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/1.png)
+
+Despues verificamos que los nodos estan corrriendo asi como la aplicación en kubernetes.
+
+```
+kubectl get nodes
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/2.png)
+
+Con el siguiente comando insatalamos helm, la cual nos ayudara a instalar chaos monkey y a deplegar esta herramientas por la linea de comandos.
+```
+scoop install helm
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/3.png)
+
+Generamos un nuevo namespace donde realizaremos las pruebas, para chaos monkey.
+
+```
+kublectl create namespace kube-mokey
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/4.png)
+
+Dentro de esta carpeta clonamos el proyecto git de  https://github.com/asobti/kube-monkey la cual kube-monkey es una implementación de Chaos Monkey  para clústeres de Kubernetes . Elimina aleatoriamente los pods de Kubernetes (k8s) en el clúster.
+
+```
+git clone https://github.com/asobti/kube-monkey
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/5.png)
+
+Dentro de la ruta kube-monkey instalamos el espacio de trabajo para chaos monkey.
+
+```
+helm install mmy-release kubemonkey/kube-monkey --version 1.
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/6.png)
+
+Con el siguiente comando podemos ver que el despligue se ha desplegado correctamente.
+
+```
+kubeclt get pods
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/7.png)
+
 ## Construido con 🛠️
 * HTML5
 * CSS3
 * JavaScript
 * API
+
+```
+
+```
 
 ## Arquitectura 🧭
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/arquitectura.png)
