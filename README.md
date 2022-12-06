@@ -298,9 +298,5 @@ Podemos verificar que nuestra aplicacion sigue funcionadoy todos sus servicios h
 * JavaScript
 * API
 
-```
-
-```
-
 ## Arquitectura 🧭
 ![Arquitectura](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/arquitectura.png)
