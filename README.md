@@ -209,14 +209,12 @@ kubectl describe pod <NOMBRE-PODS>
 ![desc-pods](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/descrip1.jpg)
 ![desc-pods2](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/descrip2.jpg)
 
-Podemos verificar que nuestra aplicacion sigue funcionado correctamente y todos sus servicios han sido desplegados eficientemente.
-![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ad.png)
 
 ### Chaos Monkey 🐒🐒
 Primero verificamos el estado actual de nuestros componentes. De primeras podemos ver un comente en “unhealthy” lo cual podia indicar un fallo en nuestra aplicacion.
 
 ```
-kubectl componentstatus
+kubectl get componentstatus
 ```
 ![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/1.png)
 
@@ -260,6 +258,39 @@ Con el siguiente comando podemos ver que el despligue se ha desplegado correctam
 kubeclt get pods
 ```
 ![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/7.png)
+
+Con el siguiente comando podemos ver que el despligue se ha heco correctamente.
+
+```
+kubectl get pods
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/7_1.png)
+
+Configuramos el archivo nginx.yaml con la configuracion necesaria, habilitamos chaos monkey, indicamos que eliminara un pod por segundo y lo replicara 8 veces.
+
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/7_2.png)
+
+Aplicamos la configuracion para generar el deploy y correr el proceso.
+
+```
+kubectl apply -f nginx.yamel
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/7_3.png)
+
+Podemos verificar que los pods estan corriendo con el siguiente comando.
+```
+kubectl get  pods --all-namespaces -l app-purpose=chaos
+```
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/8.png)
+
+Cada vez que un pod es eliminado este vuelve a inicializar de manera que nuestra aplicación sigue corriendo, con esta inyeccion de fallas nos permiten conocer que tan robusta es nuestra aplicación en cuanto a fallos de servicios (pods) y de esta manera conocer si el sistema puede sobreponerse por si mismo.
+
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/9.png)
+
+
+Podemos verificar que nuestra aplicacion sigue funcionadoy todos sus servicios han sido desplegados correctamente.
+
+![aplicacion](https://raw.githubusercontent.com/Danna-Medina/ProyectoTolerante/master/images/ad.png)
 
 ## Construido con 🛠️
 * HTML5
